@@ -16,13 +16,13 @@ git config --global core.editor nano
 
 Tras la configuración puedes ejecutar `git config --global --list` para ver en la terminal toda tu configuración global.
 
-❓ ¿Cómo se llama el archivo en donde se almacena la configuración global de Git?
+❓ ¿Cómo se llama y dónde se halla el archivo que almacena la configuración global de Git?
 
 ## #2 Primer repositorio local
 
 Crea tu primer repositorio en un directorio llamado `git-workshop`.
 
-Crea los archivos `README.md` y `Hernán.txt`. Actualmente los archivos no requieren tener contenido.
+Crea los archivos `README.md` y `Hernan.txt`. Actualmente los archivos no requieren tener contenido.
 
 Agrega esos dos archivos al staging area y realiza el **primer commit** del repo.
 
@@ -30,7 +30,7 @@ Agrega esos dos archivos al staging area y realiza el **primer commit** del repo
 
 ¿Tu nombre no es Hernán? Vamos a cambiar el nombre del archivo Hernán.txt para que coincida con el tuyo.
 
-De tal forma que **reescribas** el commit realizado en el paso anterior, renombra el archivo `Hernán.txt` a `<tu-nombre>.txt`, p. ej. `Pablo.txt`.
+De tal forma que **reescribas** el commit realizado en el paso anterior, renombra el archivo `Hernan.txt` a `<tu-nombre>.txt`, p. ej. `Pablo.txt`.
 
 ## #4 Crear ramas
 
@@ -66,15 +66,7 @@ git log --oneline --all --graph
 
 Muévete al primer commit del repo utilizando el hash del commit. Ahora regresa el commit más reciente, haciendo checkout a `master`.
 
-## #8 Navegación relativa entre commits
-
-Estando en `master`, muévete al commit apuntado por `taller-info` utilizando el modificador `^`. Regresa a `master`, y ahora muévete al commit apuntado por `yo++`, también usando el modificador `^`.
-
-Experimenta también con el modificador `~` para moverte hacia atrás. Observa que tanto `^` como `~` son modificadores para navegación exclusiva **hacia atrás**, Git no ofrece modificadores para movimiento relativo hacia delante.
-
-❓ ¿Por qué Git no tiene soporte para navegación relativa hacia delante?
-
-## #9 Aparición de conflictos al realizar merge
+## #8 Aparición de conflictos al realizar merge
 
 En `master`, modifica la primera línea del archivo `README.md`, agrega los cambios al staging area y realiza un commit.
 
@@ -85,18 +77,18 @@ Regresa a `master`, e incorpora los cambios de `taller-info` mediante un merge. 
 ❓ ¿Por qué ocurrió un conflicto en este caso?
 
 
-## #10 Resolución de conflictos de merge
+## #9 Resolución de conflictos de merge
 
 En tu editor de texto preferido, abre el archivo con el conflicto (`README.md`), elimina los marcadores de conflicto y edita el contenido de acuerdo a cómo deseas preservar el archivo.
 
 Una vez terminada la edición en el editor de texto, agrega los cambios al staging area y ejecuta `git merge --continue`.
 
-## #11 Primer repositorio de GitHub
+## #10 Primer repositorio de GitHub
 
 Crea un repositorio público en GitHub, con el nombre de `<tu-nombre>-intro-git`, p. ej. `pablo-intro-git`.
 
 ❓ ¿Cómo es GitHub diferente a Git?
 
-## #12 Sube tus cambios a GitHub
+## #11 Sube tus cambios a GitHub
 
 Empuja los cambios de tu rama `master` a GitHub, para que los demás también puedan ver tu repo.
