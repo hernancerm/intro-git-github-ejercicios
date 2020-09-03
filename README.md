@@ -57,7 +57,7 @@ Ahora regresa al primer commit del repo usando `git checkout master`. Crea otra 
 </p>
 
 
-| ℹ | Inspecciona el estado actual del repositorio con: `git log`. Observa que el repo ahora contiene tres commits, uno apuntado por `master`, otro por `taller-info` y el tercero apuntado por `yo++`.
+| ℹ | Inspecciona el estado actual del repositorio con:<br> `git log --oneline --all --graph`<br>Observa que el repo ahora contiene tres commits, uno apuntado por `master`, otro por `taller-info` y el tercero apuntado por `yo++`.
 |---|---|
 
 ❓ ¿Desde la rama `taller-info`, el archivo `.txt` con tu nombre tiene contenido o está vacío? ¿Por qué crees que es así?
@@ -74,17 +74,7 @@ Ahora, permaneciendo en `master` incorpora los cambios de `taller-info` en `mast
   <img width=350px src="./images/6.png" />
 </p>
 
-## #7 Navegación absoluta entre commits
-
-Obtén una clara visión del repositorio con el siguiente comando:
-
-```bash
-git log --oneline --all --graph
-```
-
-Muévete al primer commit del repo utilizando el hash del commit. Ahora regresa el commit más reciente, haciendo checkout a `master`.
-
-## #8 Aparición de conflictos al realizar merge
+## #7 Aparición de conflictos al realizar merge
 
 En `master`, modifica la primera línea del archivo `README.md`, agrega los cambios al staging area y realiza un commit.
 
@@ -93,29 +83,29 @@ Ahora colócate en la rama `taller-info`, modifica la primera línea de `README.
 Regresa a `master`, e incorpora los cambios de `taller-info` mediante un merge. Git te debería reportar que ha ocurrido un conflicto que requiere ser solucionado manualmente.
 
 <p align="center">
-  <img width=380px src="./images/8.png" />
+  <img width=380px src="./images/7.png" />
 </p>
 
 ❓ ¿Por qué ocurrió un conflicto en este caso?
 
 
-## #9 Resolución de conflictos de merge
+## #8 Resolución de conflictos de merge
 
 En tu editor de texto preferido, abre el archivo con el conflicto (`README.md`), elimina los marcadores de conflicto y edita el contenido de acuerdo a cómo deseas preservar el archivo.
 
 Una vez terminada la edición en el editor de texto, agrega los cambios al staging area y ejecuta `git merge --continue`.
 
 <p align="center">
-  <img width=550px src="./images/9.png" />
+  <img width=550px src="./images/8.png" />
 </p>
 
-## #10 Primer repositorio de GitHub
+## #9 Primer repositorio de GitHub
 
 Crea un repositorio público en GitHub, con el nombre de `<tu-nombre>-intro-git`, p. ej. `pablo-intro-git`.
 
 ❓ ¿Cómo es GitHub diferente a Git?
 
-## #11 Sube tus cambios a GitHub
+## #10 Sube tus cambios a GitHub
 
 Empuja los cambios de tu rama `master` a GitHub, para que los demás también puedan ver tu repo.
 
