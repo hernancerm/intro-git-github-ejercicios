@@ -113,7 +113,7 @@ Empuja los cambios de tu rama `master` a GitHub, para que los demás también pu
 
 ## Recursos adicionales
 
+- ⭐ [Parte 2: Profundizando, Manual Definitivo de Git](https://github.com/HerCerM/ManualDefinitivoGit/blob/master/Parte2_Profundizando.md). Para conocer Git a profundidad, abarcando correcciones avanzadas, los peligros de reescribir la historia pública, ignorar archivos y más, vea la segunda parte del manual.
 - [Flujos de trabajo con Git](https://github.com/HerCerM/ManualDefinitivoGit/blob/master/Parte2_Profundizando.md#flujos-de-trabajo-workflows). Es importante usar las ramas bajo algún estándar que facilite la colaboración, lectura de la historia y reversión de errores.
 - [Cómo redactar mensajes de commit relevantes](https://chris.beams.io/posts/git-commit/). El mensaje de cada commit debe ser conciso y descriptivo acerca de los cambios.
 - [Commits atómicos](https://www.freshconsulting.com/atomic-commits/). Es importante seguir ciertas guías para decidir cuándo realizar un commit.
-- ⭐ [Parte 2: Profundizando, Manual Definitivo de Git](https://github.com/HerCerM/ManualDefinitivoGit/blob/master/Parte2_Profundizando.md). Para conocer Git a profundidad, abarcando correcciones avanzadas, los peligros de reescribir la historia pública, ignorar archivos y más, vea la segunda parte del manual.
